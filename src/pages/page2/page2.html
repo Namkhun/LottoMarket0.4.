@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-navbar color='navbarColor'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      ตลาดล๊อตเตอรี่
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+
+  <ion-list><ion-list-header>
+      <h2>เลขท้าย 2 ตัว</h2>
+    </ion-list-header>
+        <ion-item-sliding *ngFor="let item of posts | async">
+         
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/img/thumbnail-totoro.png">
+              </ion-avatar>
+
+              <h2>{{ item.payload.val().number }}</h2>
+              <p>จังหวัด {{item.payload.val().provine}} ชื่อ {{ item.payload.val().user }}</p>
+            </ion-item>
+            <ion-item-options>
+              <button ion-button color="navbarColor" icon-start (click)="goToReply(item.key)">
+                <ion-icon name="text"></ion-icon>
+                ตอบกลับ
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      <h2>00</h2>
+    </ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/thumbnail-totoro.png">
+        </ion-avatar>
+        <h2>{{ displayName }}</h2>
+        <h2>{{ number }}</h2>
+        <p>Back off man, I'm a scientist.</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          More
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/thumbnail-totoro.png">
+        </ion-avatar>
+        <h2>Venkman</h2>
+        <p>Back off man, I'm a scientist.</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          More
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>    
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      <h2>01</h2>
+    </ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/thumbnail-totoro.png">
+        </ion-avatar>
+        <h2>Venkman</h2>
+        <p>Back off man, I'm a scientist.</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          More
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/thumbnail-totoro.png">
+        </ion-avatar>
+        <h2>Venkman</h2>
+        <p>Back off man, I'm a scientist.</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+          More
+        </button>
+        <button ion-button color="primary" icon-start>
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>   
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab right bottom>
+      <button ion-fab color="danger" (click)="addPostNumbers()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

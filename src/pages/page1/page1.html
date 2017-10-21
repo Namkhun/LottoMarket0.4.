@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-navbar color='navbarColor'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      หน้าหลัก
+    </ion-title>
+  </ion-navbar>
+  <ion-slides autoplay="5" loop="true" speed="5000"zoom="true">
+    <ion-slide>
+      <img src="../assets/h1.jpg">
+    </ion-slide>
+    <ion-slide>
+        <img src="../assets/h2.jpg">
+    </ion-slide>
+    <!-- <ion-slide>
+        <img src="../assets/Lottomarket.png">
+    </ion-slide> -->
+  </ion-slides>
+  
+
+</ion-header>
+<ion-content  id="page1">
+
+  <ion-list> 
+      <ion-list-header>
+          <h2> 5 อันดับ เลขฮอต (เลขท้าย 2 ตัว)</h2>
+        </ion-list-header> 
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/mint.jpg">
+          </ion-thumbnail>
+          <h2>02,20</h2>
+          <p>บ้า บอมิ้นและคนอื่นๆอีก 20 คนต้องการเลขนี้</p> 
+        </ion-item>
+    
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/bo.jpg">
+          </ion-thumbnail>
+          <h2>25,52</h2>
+          <p>โบโบบิ และคนอื่นๆอีก 18 คนต้องการเลขนี้</p> 
+        </ion-item>
+    
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/Ree.jpg">
+          </ion-thumbnail>
+          <h2>10,01</h2>
+          <p>หรี่ลูกกรอก และคนอื่นๆอีก 17 คนต้องการเลขนี้</p>
+         
+        </ion-item>
+    
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/tao.jpg">
+          </ion-thumbnail>
+          <h2>24,42</h2>
+          <p>เตา เตา เกาแต๊ส และคนอื่นๆอีก 16 คนต้องการเลขนี้</p>
+          
+        </ion-item>
+    
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/nam.jpg">
+          </ion-thumbnail>
+          <h2>35,53</h2>
+          <p>แม่เล้า และคนอื่นๆอีก 15 คนต้องการเลขนี้</p>
+          
+        </ion-item>
+        <ion-item><button ion-button clear item-end (click)="goToPage3()">ดูเพิ่มเติม</button></ion-item>
+      </ion-list>                      
+    
+      <ion-list>
+          <ion-list-header>
+           <h2> 5 อันดับ เจ้าพ่อ เจ้าแม่</h2>
+            </ion-list-header> 
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/mint.jpg">
+              </ion-thumbnail>
+              <h2>บ้า บอ มิ้น</h2>
+              <p>ใบ้ถูกมาแล้ว 5 งวดติด!!</p>
+            </ion-item>
+        
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/bo.jpg">
+              </ion-thumbnail>
+              <h2>โบโบบิ</h2>
+              <p>ใบ้ถูกมาแล้ว 4 งวดติด!!</p>
+            </ion-item>
+        
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/Ree.jpg">
+              </ion-thumbnail>
+              <h2>หรี่ลูกกรอก</h2>
+              <p>ใบ้ถูกมาแล้ว 3 งวดติด!!</p>   
+            </ion-item>
+        
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/tao.jpg">
+              </ion-thumbnail>
+              <h2>เตา เตา เกาแต๊ส</h2>
+              <p>ใบ้ถูกมาแล้ว 3 งวดติด!!</p>    
+            </ion-item>
+        
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/nam.jpg">
+              </ion-thumbnail>
+              <h2>แม่เล้า</h2>
+              <p>ใบ้ถูกมาแล้ว 3 งวดติด!!</p>
+              
+            </ion-item>
+          
+          <ion-item><button ion-button clear item-end (click)="goToPage2()">ดูเพิ่มเติม</button></ion-item>
+     
+          </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="navbarColor">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <div>
+        <h2 (click)="editname()">{{displayName}}</h2>
+      </div>
+<div class="profile-image" (click)="editimage()">
+  <img src="{{avatar}}">
+</div>
+<div>
+  {{email}}
+</div>
+<div>
+ คลิกที่รูปหรือชื่อของคุณเพื่อเปลี่ยน
+</div>
+<div class="spacer" style="height: 10px;"></div>
+<div>
+  <button ion-button round outline color="navbarColor" (click)="logout()">Logout</button>
+</div>
+</ion-content>

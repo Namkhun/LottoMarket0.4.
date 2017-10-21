@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color='navbarColor'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      เลขเด็ด
+    </ion-title>
+  </ion-navbar>
+  
+      
+        <ion-card class="card-background-page">
+            <ion-slides autoplay="5" loop="true" speed="5000"zoom="true">
+                <ion-slide *ngFor="let slide of slides">
+          <img [src]="slide.image" class="slide-image" />
+          <div class="card-title" [innerHTML]="slide.title"></div>
+          <div class="card-subtitle"[innerHTML]="slide.description">41 Listings</div>
+        </ion-slide>
+      </ion-slides>
+        </ion-card>    
+</ion-header>
+
+<ion-content  id="page2" class="grid">
+  <ion-list>
+      <ion-list-header>
+          <h1> เลขเด็ดมาแรง</h1>
+        </ion-list-header>
+      <ion-item>
+        <ion-icon name='md-star' item-start style="color: #FFCC00"></ion-icon>
+        99
+        <ion-badge item-end>625 แชร์เลขนี้</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name='md-star' item-start style="color: #708090"></ion-icon>
+        07
+        <ion-badge item-end>513 แชร์เลขนี้</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name='md-star' item-start style="color: #FF4500"></ion-icon>
+        15
+        <ion-badge item-end>499 แชร์เลขนี้</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-icon ion-icon name='md-star' item-start style="color: #488aff"></ion-icon>
+        32
+        <ion-badge item-end>351 แชร์เลขนี้</ion-badge>
+      </ion-item>
+       <ion-item>
+      <ion-icon ion-icon name='md-star' item-start style="color: #488aff"></ion-icon>
+        25
+        <ion-badge item-end>222 แชร์เลขนี้</ion-badge>
+      </ion-item>
+       <ion-item>
+      <ion-icon ion-icon name='md-star' item-start style="color: #488aff"></ion-icon>
+        09
+        <ion-badge item-end>189 แชร์เลขนี้</ion-badge>
+      </ion-item>
+  
+  </ion-list>
+   <ion-fab right bottom> 
+<button ion-fab color="danger" icon-only (click)="addShareNumbers()"><ion-icon name="md-share-alt"></ion-icon></button>
+   </ion-fab>
+
+
+</ion-content>

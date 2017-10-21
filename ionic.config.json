@@ -1,5 +1,8 @@
 {
   "name": "LottoMarket0.4.4",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "ca30c5af",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

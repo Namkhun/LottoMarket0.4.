@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar color="navbarColor">
+      <ion-title>ตอบกลับกระทู้</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="cards-bg social-cards">
+  
+  <ion-card>
+  
+    <ion-item>
+      <ion-avatar item-start  >
+        <img src="assets/img/thumbnail-totoro.png">
+      </ion-avatar>
+      <h2>ชื่อ {{user}}</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+    <ion-card-content>
+      <p>ตัวเลขที่อยากได้ {{number }}</p>
+      <p>ที่อยู่ {{provine }}</p>
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button color="navbarColor" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          ตอบกลับ
+        </button>
+      </ion-col>
+    </ion-row>
+  
+  </ion-card> 
+  </ion-content>
+  <style>
+    .social-cards ion-col {
+      padding: 0;
+    }
+  </style>
